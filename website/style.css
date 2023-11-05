@@ -1,24 +1,3 @@
-/* CSS Varirables for color */
-color-theme-variables {
-    /* Both */
-    --accentuation-color : ;
-
-    /* Light Theme */
-    --background-light-color : ;
-    --section-light-color : #000000;
-    --article-light-color : ;
-    --text-light-color: ;
-    
-    /* Dark Theme */
-    --background-light-color : ;
-    --section-light-color : #000000;
-    --article-light-color : ;
-    --text-light-color: ;
-
-
-}
-
-
 body {
     margin: 0;
     padding: 0;
@@ -239,4 +218,23 @@ footer img {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.miFamilia {
+    padding: 20px 20px 30px 20px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miFamilia ion-icon {
+    text-decoration: none;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
 }
