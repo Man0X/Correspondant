@@ -31,8 +31,10 @@
               emailjs.sendForm('service_1bsex8r', 'template_5vf02me', this)
                   .then(function() {
                       console.log('SUCCESS!');
+                      alert("L'email a bien été envoyé , merci")
                   }, function(error) {
                       console.log('FAILED...', error);
+                      alert("L'email n'a pu être envoyé , si vous recevez cette alerte merci de me contacter par ENT ou tout autre moyen , merci.")
                   });
           });
       }
@@ -174,8 +176,6 @@
             <input type="hidden" name="contact_number">
             <label>¿ Como te llama ?</label>
             <input type="text" name="user_name">
-            <label>Qual es tu email , es para enviame tu respueta</label>
-            <input type="email" name="user_email">
             <label>¿Que quieres decirme?</label>
             <textarea name="message"></textarea>
             <input type="submit" value="¡Enviame!">
