@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Vida</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+          (function() {
+              // https://dashboard.emailjs.com/admin/account
+              emailjs.init('Abbv32q5A22Ix_wiY');
+          })();
+      </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              // Remplacez 'contact_service' par votre service_id et 'contact_form' par votre template id
+              emailjs.sendForm('service_1bsex8r', 'template_5vf02me', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                      alert("L'email a bien été envoyé , merci")
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                      alert("L'email n'a pu être envoyé , si vous recevez cette alerte merci de me contacter par ENT ou tout autre moyen , merci.")
+                  });
+          });
+      }
+  </script>
+  </head>
+  <body id="body">
+    <header>
+      <img src="./assets/AVRIL_Manoah.png" alt="Mi Foto" />
+      <h1>Mi Vida</h1>
+      <img
+        id="theme-button"
+        src="./assets/icon/theme.png"
+        alt="Swap theme color" />
+    </header>
+    <main>
+      <section>
+        <h2>¿ Qué soy ?</h2>
+        <p class="theme">Holá , me llamo , Manoah , tengo cuatorce años.</p>
+      </section>
+      <section class="porque theme-background">
+        <h2>Porqué apprendo español ?</h2>
+        <p>
+          Honestamente , no me gusta mucho español , al principio , quiero
+          apprender el alemán , pero no puedo elegir alemán porque en el colegío
+          elego español , luego elego español european , al final me gusta
+          porque hay un viajar y soy con mi amigos y elego español porque soy
+          malo en hablar español.
+        </p>
+      </section>
+      <section class="mi">
+        <h2>¿ Como soy ?</h2>
+        <article class="fisico">
+          <h3>Como soy fisicamente ?</h3>
+          <div class="flex">
+            <p>
+              Fisicamente , soy grande y moreno , porque soy no en la francia
+              metropolita , soy de la isla de la Réunion , es una isla que
+              appartenece a la francia. Y tengo marrón cabello , y marrón ojos.
+            </p>
+            <img src="./assets/AVRIL_Manoah.png" alt />
+          </div>
+        </article>
+        <article class="caracter">
+          <h3>¿ Qué es mi Caractèr ?</h3>
+          <p>
+            Soy amable, generoso , y perdono facílamente. Luego tengo por
+            defectos : soy desorganizado , soy con frequencia tarde en la
+            escuela , para mi amigos , a menudo !
+          </p>
+        </article>
+      </section>
+      <section class="miGusto">
+        <h2>¿ Qué me gusta ?</h2>
+        <article>
+          <h3>Mi favorito plato</h3>
+          <p>Mi favorito plato es arroz con frijol rojo y con bistec.</p>
+        </article>
+        <article class="pays">
+          <h3>Mi favorito paises</h3>
+          <p>
+            Dónde me gusta viajer , es en Alemán <img
+              src="./assets/flag/germany.png" alt> , en Austria <img
+              src="./assets/flag/austria.png" alt>, en los Países basos <img
+              src="./assets/flag/netherlands.png" alt>, y en Noruega <img
+              src="./assets/flag/norway.png" alt>.
+          </p>
+        </article>
+        <article>
+          <h3>Mi favorito animales</h3>
+          <p>
+            Mi favoritos animales son :
+          </p>
+          <div class="flex-container-animaux">
+            <button id="card-animal-button-left">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button id="card-animal-button-right">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+            <div class="card-animal-diapo-container">
+              <div id="card-animal-1" class="card-animal card-animal-1">
+                <div class="flex">
+                  <div class="card-animal-image">
+                    <img class="axolotl-image"
+                      src="./assets/animal-card/axolotl.jpg" alt />
+                  </div>
+                  <div class="card-animal-info">
+                    <h4>Axolotl</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsa, illo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="card-animal-2" class="card-animal card-animal-2">
+                <div class="flex">
+                  <div class="card-animal-image">
+                    <img src="./assets/animal-card/phasme.jpg" alt />
+                  </div>
+                  <div class="card-animal-info">
+                    <h4>Phasme</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsa, illo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- <article>
+          <h3>Mi favorito desportes</h3>
+          <p>
+            Y en el desporte , me gusta mucho bici de montaña y me gusta mucho
+            también el snowboard.
+          </p>
+        </article> -->
+        </section>
+        <section class="miFamilia theme">
+          <h2>Qué es mi Familia ?</h2>
+          <p>Es mi Familia :</p>
+          <object style="border-radius: 50px;"
+            data="./assets/FamilyTree.pdf"
+            type="application/pdf"
+            width="100%" height="375">
+          </object>
+          <div class="flex-center">
+            <p>Si quieres ver mejor :</p>
+            <a
+              href="./assets/FamilyTree.pdf"><ion-icon
+                name="cloud-download-outline"></ion-icon></a>
+          </div>
+        </section>
+        <section class="YTu?">
+          <h2>¿Y tu ?</h2>
+          <p>Y por tu , tengo preguntas :</p>
+          <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label for="user_name">¿ Como te llama ?</label>
+            <input type="text" id="user_name" name="user_name">
+            <label for="message">¿Que quieres decirme?</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" value="¡Enviame!">
+          </form>
+        </section>
+      </main>
+      <footer>
+        <div class="discord">
+          <img src="./assets/discord.png" alt />
+          <p>Mi Discord : @manox34</p>
+        </div>
+      </footer>
+    </body>
+  </html>

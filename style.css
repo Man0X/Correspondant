@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-image: url(./assets/background/light.svg);
+    transition: background-image 0.5s ease-in-out;
+}
+
+header {
+    background-image: url(./assets/banner-header-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: start;
+    padding-top: 30px;
+    position: relative;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+header img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+h3 {
+    font-size: 35px;
+    transition: color 0.5s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+    font-family: serif ;
+    transition: color 0.5s ease-in-out;
+    text-align: center;
+}
+
+section {
+    background-color: #c6c6c6;
+    margin: 30px;
+    padding: 20px 50px;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#theme-button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transition: transform 0.75s ease-out;
+}
+
+#theme-button:hover {
+    cursor: pointer;
+}
+
+.theme-swap-text {
+    color: #fff;
+}
+
+.theme-swap-section {
+    background-color: #4b4b4b;
+}
+
+.theme-sun {
+    transform: rotate(-135deg);
+}
+
+.theme-night {
+    transform: rotate(45deg);
+}
+
+.fisico .flex img {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+
+footer {
+    background-image: url(./assets/banner-header-background.svg);
+    margin: 0;
+    padding: 20px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.discord {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.discord img {
+    width: 40px;
+    height: 40px;
+}
+
+.discord p {
+    font-family: Impact;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-container-animaux {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-animal {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 30px;
+    margin: auto;
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: none;
+}
+
+.card-animal-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-animal h4 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.card-animal p {
+    font-size:20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.card-animal img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#card-animal-button-left , #card-animal-button-right {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    border-radius: 25%;
+}
+
+#card-animal-button-left {
+    left: 0;
+}
+
+#card-animal-button-right {
+    right: 0;
+}
+
+#card-animal-button-left:hover , #card-animal-button-right:hover {
+    box-shadow: 0 0 0 0 0;
+
+}
+
+.show {
+    display: block;
+}
+
+.card-animal-image {
+   display: flex;
+   align-items: center;
+}
+.pays img{
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+.pays p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.miFamilia {
+    padding: 20px 20px 30px 20px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miFamilia ion-icon {
+    text-decoration: none;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
