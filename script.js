@@ -75,7 +75,3 @@ function showTheGoodAnimalCard() {
     let currentAnimalCardToShow =  document.getElementById('card-animal-' + animalDiapoNumber)
     currentAnimalCardToShow.classList.add('show')
 }
-
-function getAnimalCardsInJSON() {
-    
-}
