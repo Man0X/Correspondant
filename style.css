@@ -257,3 +257,28 @@ footer img {
 #liquidLogo {
     width: 50%;
 }
+
+#icon-warning {
+    font-size: 2000px;
+    height: 200px;
+    width: 200px;
+}
+
+#atencion {
+    background-color: rgb(138, 2, 2);
+    width: 60%;
+    display: flex;
+    margin: auto;
+    border-radius: 100px;
+    padding: 30px;
+    color: rgb(216, 216, 216);
+    font-size: 30px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#atencion div {
+    padding: 50px;
+}
